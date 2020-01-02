@@ -6,11 +6,11 @@
     "keywords"              : ["theme", "Ceres", "template"],
     "type"                  :"theme",
     "require"               : [],
-    "serviceProvider"       :"FTCeres_Custom\\Providers\\ThemeServiceProvider",
+    "serviceProvider"       :"Theme\\Providers\\ThemeServiceProvider",
     "dataProviders"         :
     [
         {
-            "key"           :"FTCeres_Custom\\Containers\\ThemeContainer",
+            "key"           :"Theme\\Containers\\ThemeContainer",
             "name"          :"Dark background",
             "description"   :"Change the background colour of the Ceres template"
         }
