@@ -20,12 +20,5 @@ class ThemeServiceProvider extends ServiceProvider
 
 	}
 
-  public function boot(Twig $twig, Dispatcher $eventDispatcher)
-    {
-        $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
-        {
-           $partial->set('footer', 'Theme::content.ThemeFooter');
-        }, self::PRIORITY);
-        return false;
-    }
+
 }
