@@ -4,5 +4,5 @@
     "namespace"         :"HelloWorld",
     "author"            :"Alex Lignow",
     "type"              :"template",
-    "serviceProvider"   :FTCeres_Custom\\Providers\\HelloWorldServiceProvider
+    "serviceProvider"   :"FTCeres_Custom\\Providers\\HelloWorldServiceProvider"
 }
