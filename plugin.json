@@ -4,5 +4,5 @@
     "namespace"         :"FTCeres_Custom",
     "author"            :"Alex Lignow",
     "type"              :"template",
-    "serviceProvider"   :"FTCeres_Custom\\Providers\\FTCeres_CustomServiceProvider"
+    "serviceProvider"   :FTCeres_Custom\\Providers\\FTCeres_CustomServiceProvider
 }
