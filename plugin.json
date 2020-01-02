@@ -1,7 +1,7 @@
 {
     "name"                  :"FTLegendCustom",
     "description"           :"Eigene Theme Anpassungen für Legend Theme",
-    "namespace"             :"FTCeres_Custom",
+    "namespace"             :"Theme",
     "author"                :"Alex Lignow",
     "keywords"              : ["theme", "Ceres", "template"],
     "type"                  :"theme",
