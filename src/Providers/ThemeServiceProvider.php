@@ -10,6 +10,8 @@ use Plenty\Plugin\Templates\Twig;
 class ThemeServiceProvider extends ServiceProvider
 {
 
+  const PRIORITY = 98;
+
 	/**
 	 * Register the service provider.
 	 */
@@ -22,8 +24,9 @@ class ThemeServiceProvider extends ServiceProvider
     {
         $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
         {
+           $partial->set('page-design', 'Theme::PageDesign.PageDesign');
            $partial->set('footer', 'Theme::content.ThemeFooter');
-        }, 0);
+        }, self::PRIORITY);
         return false;
     }
 }
