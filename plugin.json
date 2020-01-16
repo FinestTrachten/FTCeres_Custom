@@ -1,18 +1,10 @@
 {
     "name"                  :"FTLegendCustom",
     "description"           :"Eigene Theme Anpassungen für Legend Theme",
-    "namespace"             :"Theme",
+    "namespace"             :"FTLegendCustom",
     "author"                :"Alex Lignow",
     "keywords"              : ["theme", "Ceres", "template"],
     "type"                  :"theme",
     "require"               : [],
-    "serviceProvider"       :"Theme\\Providers\\ThemeServiceProvider",
-    "dataProviders"         :
-    [
-        {
-            "key"           :"Theme\\Containers\\ThemeContainer",
-            "name"          :"Dark background",
-            "description"   :"Change the background colour of the Ceres template"
-        }
-    ]
+    "serviceProvider"       :"FTLegendCustom\Providers\\FTLegendCustomServiceProvider"    
 }
