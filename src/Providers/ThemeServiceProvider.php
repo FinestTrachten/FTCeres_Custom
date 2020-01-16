@@ -7,6 +7,11 @@ use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
 
+use IO\Helper\TemplateContainer;
+use IO\Helper\ResourceContainer;
+use IO\Helper\ComponentContainer;
+use IO\Extensions\Functions\Partial;
+
 class FTLegendCustomServiceProvider extends ServiceProvider
 {
 
@@ -24,13 +29,15 @@ class FTLegendCustomServiceProvider extends ServiceProvider
 /**
 	 * Boot a template for the footer that will be displayed in the template plugin instead of the original footer.
 	 */
-	public function boot(Twig $twig, Dispatcher $eventDispatcher)
+	public function boot(Twig $twig, Dispatcher $dispatcher)
     {
-        $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
+        $dispatcher->listen('IO.init.templates', function(Partial $partial)
         {
             $partial->set('footer', 'FTLegendCustom::PageDesign.Partials.Footer');
 
         }, self::PRIORITY);
         return false;
     }
+    
+    
 }
