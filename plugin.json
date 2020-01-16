@@ -6,5 +6,5 @@
     "keywords"              : ["theme", "Ceres", "template"],
     "type"                  :"theme",
     "require"               : [],
-    "serviceProvider"       :"FTLegendCustom\\Providers\\FTLegendCustomServiceProvider"    
+    "serviceProvider"       :"FTLegendCustom\\Providers\\FTLegendCustomServiceProvider"   
 }
