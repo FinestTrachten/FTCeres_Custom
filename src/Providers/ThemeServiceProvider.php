@@ -34,7 +34,7 @@ class FTLegendCustomServiceProvider extends ServiceProvider
             $partial->set('footer', 'FTLegendCustom::PageDesign.Partials.Footer');
 
 
-        }, 0);
+        }, self::PRIORITY);
         return false;
     }
 }

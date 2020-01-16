@@ -5,7 +5,7 @@
     "author"                :"Alex Lignow",
     "keywords"              : ["theme", "Ceres", "template"],
     "type"                  :"theme",
-    "require"               : [],
+    "require"               : ["Legend"],
     "serviceProvider"       :"FTLegendCustom\\Providers\\FTLegendCustomServiceProvider"   
 }
 
