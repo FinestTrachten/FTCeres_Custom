@@ -10,7 +10,7 @@ use Plenty\Plugin\Templates\Twig;
 class FTLegendCustomServiceProvider extends ServiceProvider
 {
 
-  const PRIORITY = 98;
+  const PRIORITY = 0;
 
 	/**
 	 * Register the service provider.
@@ -28,11 +28,7 @@ class FTLegendCustomServiceProvider extends ServiceProvider
     {
         $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
         {
-           //$partial->set('footer', 'Theme::content.ThemeFooter');
-            $partial->set('footer', 'Ceres::PageDesign.Partials.Footer');
-            $partial->set('footer', 'Legend::PageDesign.Partials.Footer');
             $partial->set('footer', 'FTLegendCustom::PageDesign.Partials.Footer');
-
 
         }, self::PRIORITY);
         return false;
