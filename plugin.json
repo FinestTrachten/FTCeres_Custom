@@ -8,3 +8,4 @@
     "require"               : [],
     "serviceProvider"       :"FTLegendCustom\\Providers\\FTLegendCustomServiceProvider"   
 }
+
