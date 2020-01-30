@@ -33,7 +33,7 @@ class FTLegendCustomServiceProvider extends ServiceProvider
     {
         $dispatcher->listen('IO.init.templates', function(Partial $partial)
         {
-              $partial->set('footer', 'FTLegendCustom::content.ThemeFooter');
+              $partial->set('footer', 'FTLegendCustom::content.FTLegendCustomFooter');
               //$partial->set('footer', 'Ceres::PageDesign.Partials.Footer');
 
 
