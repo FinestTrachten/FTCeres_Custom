@@ -4,10 +4,10 @@ namespace FTLegendCustom\Containers;
  
 use Plenty\Plugin\Templates\Twig;
  
-class ThemeContainer
+class FTLegendCustomContainer
 {
     public function call(Twig $twig):string
     {
-        return $twig->render('Theme::content.Theme');
+        return $twig->render('FTLegendCustom::content.FTLegendCustom');
     }
 }
