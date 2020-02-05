@@ -11,3 +11,4 @@ class FTLegendCustomContainer
         return $twig->render('FTLegendCustom::content.FTLegendCustom');
     }
 }
+
