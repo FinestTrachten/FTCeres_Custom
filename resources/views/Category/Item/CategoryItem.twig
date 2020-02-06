@@ -55,8 +55,16 @@
                     </div>
                 </div>
                 {% endif %}
-##########################
-                <div id="isParallaxImg" class="list-controls {% if (not ceresConfig.item.showCategoryImage) or (category.details[0].imagePath is empty) %}no-parallax-img {% endif %}mt-5 mb-5">
+##
+{% if ($CurrentCategoryId == 419) %}
+<div class="row no-gutters mb-4">
+	{% Container_NavigationCategories6() %}
+</div>
+{% endif %}
+##
+
+
+<div id="isParallaxImg" class="list-controls {% if (not ceresConfig.item.showCategoryImage) or (category.details[0].imagePath is empty) %}no-parallax-img {% endif %}mt-5 mb-5">
                     <div class="list-controls-inner">
                         <div class="row">
                             <div class="col-12 text-right">
