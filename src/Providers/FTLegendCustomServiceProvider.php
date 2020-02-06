@@ -6,6 +6,8 @@ use IO\Extensions\Functions\Partial;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
+
+
  
 
 class FTLegendCustomServiceProvider extends ServiceProvider
@@ -29,7 +31,7 @@ class FTLegendCustomServiceProvider extends ServiceProvider
     {
         $dispatcher->listen('IO.init.templates', function(Partial $partial)
         {
-                $partial->set('footer', 'FTLegendCustom::PageDesign.Partials.Footer');
+                //$partial->set('footer', 'FTLegendCustom::PageDesign.Partials.Footer');
 
 
         }, self::PRIORITY);
