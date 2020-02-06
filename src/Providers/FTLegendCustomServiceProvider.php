@@ -29,12 +29,19 @@ class FTLegendCustomServiceProvider extends ServiceProvider
 	 */
 	public function boot(Twig $twig, Dispatcher $dispatcher)
     {
+        /*
         $dispatcher->listen('IO.init.templates', function(Partial $partial)
         {
                 $partial->set('footer', 'FTLegendCustom::PageDesign.Partials.Footer');
 
 
         }, self::PRIORITY);
+        */
+        $dispatcher->listen('IO.tpl.category.item', function (TemplateContainer $container)
+        {
+            $container->setTemplate('FTLegendCustom::Category.Item.CategoryItem');
+        }, self::PRIORITY);
+        
         return false;
     }
     
