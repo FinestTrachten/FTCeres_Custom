@@ -3,6 +3,7 @@
 namespace FTLegendCustom\Providers;
 
 use IO\Extensions\Functions\Partial;
+use IO\Helper\TemplateContainer;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
