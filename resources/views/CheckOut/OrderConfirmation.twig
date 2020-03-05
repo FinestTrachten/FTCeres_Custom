@@ -52,6 +52,7 @@
                 {% include "Ceres::Checkout.OrderDetails" with { orderData: data } %}
 
                 <hr>
+                <br />............<br />
                 {% if addContentAfterOrderDetailsRow|trim is not empty %}
                     <div class="row">
                         {{ addContentAfterOrderDetailsRow }}
@@ -83,4 +84,3 @@
         {% endif %}
     {% endif %}
 {% endblock %}
-###
