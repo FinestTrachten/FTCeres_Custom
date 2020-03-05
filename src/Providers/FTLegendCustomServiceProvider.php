@@ -42,6 +42,12 @@ class FTLegendCustomServiceProvider extends ServiceProvider
         {
             $container->setTemplate('FTLegendCustom::Category.Item.CategoryItem');
         }, self::PRIORITY);
+            
+        $dispatcher->listen('IO.tpl.OrderConfirmation', function (TemplateContainer $container)
+        {
+            $container->setTemplate('FTLegendCustom::Checkout.OrderConfirmation');
+        }, self::PRIORITY);
+    
         
         return false;
     }
