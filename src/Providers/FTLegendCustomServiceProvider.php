@@ -14,8 +14,6 @@ use Plenty\Plugin\Templates\Twig;
 class FTLegendCustomServiceProvider extends ServiceProvider
 {
 
-  const PRIORITY = 0;
-
 	/**
 	 * Register the service provider.
 	 */
@@ -36,26 +34,26 @@ class FTLegendCustomServiceProvider extends ServiceProvider
                 $partial->set('footer', 'FTLegendCustom::PageDesign.Partials.Footer');
 
 
-        }, self::PRIORITY);
+        }, 0);
         */
         $dispatcher->listen('IO.tpl.category.item', function (TemplateContainer $container)
         {
             $container->setTemplate('FTLegendCustom::Category.Item.CategoryItem');
-        }, self::PRIORITY);
+        }, 0);
         
-        
+        /*
         $dispatcher->listen('IO.tpl.OrderConfirmation', function (TemplateContainer $container)
         {
             $container->setTemplate('FTLegendCustom::CheckOut.OrderConfirmation');
-        }, self::PRIORITY);
-         
-        $dispatcher->listen('IO.tpl.OrderConfirmation', function (TemplateContainer $container)
+        }, 0);
+         */
+        
+        $dispatcher->listen('IO.tpl.orderconfirmation', function (TemplateContainer $container)
         {
             $container->setTemplate('FTLegendCustom::CheckOut.OrderDetails');
-        }, self::PRIORITY);   
+        }, 0);   
         
-        
-        return false;
+            return false;
     }
     
     
