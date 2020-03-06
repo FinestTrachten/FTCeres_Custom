@@ -258,33 +258,3 @@
         {{ Totals.forOrder(orderData) }}
     </div>
 </div>
-
-<!-- Google DataLayer -->
-<script>
-dataLayer.push({
-‘ecommerce’: {
-‘purchase’: {
-‘actionField’: {
-‘id’: ‘{{ orderData.order.id }}’,
-‘affiliation’: ‘AFFILIATION_NAME’,
-‘revenue’: ‘{{ totals.totalGross | formatMonetary( basketTotalsCurrency ) }}’,
-‘tax’:’TAX_VALUE′,
-‘shipping’: ‘{{ totals.shippingGross | formatMonetary(
-basketTotalsCurrency ) }}’,
-‘coupon’: ”
-},
-‘products’: [
-{% for item in orderData.order.orderItems %}{
-‘id’: ‘{{ item.itemVariationId }}’,
-‘name’: ‘{{ item.orderItemName }}’,
-‘price’: {{ (priceNet ? item.amounts[0].priceNet :CERES
-item.amounts[0].priceGross) | formatMonetary( item.amounts[0].currency
-) }},
-‘quantity’: {{ item.quantity }}
-},{% if loop.last == true %} } {% endif %}{% endfor %}
-]}
-}
-});
-</script>
-<!-- End Google DataLayer -->
-
