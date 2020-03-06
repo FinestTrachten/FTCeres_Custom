@@ -48,11 +48,12 @@ class FTLegendCustomServiceProvider extends ServiceProvider
         }, 0);
        
          */
+        /*
         $dispatcher->listen('IO.tpl.order-confirmation', function (TemplateContainer $container)
         {
             $container->setTemplate('FTLegendCustom::CheckOut.OrderDetails');
         }, 0);   
-       
+       */
         
             return false;
     }
