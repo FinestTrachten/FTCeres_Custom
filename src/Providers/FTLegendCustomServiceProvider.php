@@ -46,12 +46,13 @@ class FTLegendCustomServiceProvider extends ServiceProvider
         {
             $container->setTemplate('FTLegendCustom::CheckOut.OrderConfirmation');
         }, 0);
+       
          */
-        
-        $dispatcher->listen('IO.tpl.orderconfirmation', function (TemplateContainer $container)
+        $dispatcher->listen('IO.tpl.order-confirmation', function (TemplateContainer $container)
         {
             $container->setTemplate('FTLegendCustom::CheckOut.OrderDetails');
         }, 0);   
+       
         
             return false;
     }
